@@ -1,8 +1,8 @@
 def decode_message( s: str, p: str) -> bool:
 
 # write your code here
-        if len(s) != len(p):
-                return False
+        if len(s) == len(p):
+                return True
     
         for i in range(len(s)):
             if p[i] == '?':
@@ -13,5 +13,5 @@ def decode_message( s: str, p: str) -> bool:
             elif s[i] != p[i]:
                 return False
     
-        return True
+        return False
 
