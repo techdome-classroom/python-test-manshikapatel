@@ -13,5 +13,5 @@ def decode_message( s: str, p: str) -> bool:
             elif s[i] != p[i]:
                 return False
     
-    return True
+        return True
 
