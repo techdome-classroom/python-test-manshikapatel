@@ -6,4 +6,4 @@ def decode_message( s: str, p: str) -> bool:
         for i in range(len(s)):
                 if p[i] == '?':
                         if not s[i].isalph a():
-                                
+                                return False
