@@ -4,7 +4,7 @@ def decode_message( s: str, p: str) -> bool:
          if len(s) != len(p):
                 return False
     
-        for i in range(len(input_string)):
+        for i in range(len(s)):
         if pattern[i] == '?':
             if not input_string[i].isalpha():
                 return False
