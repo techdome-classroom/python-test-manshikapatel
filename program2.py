@@ -10,7 +10,7 @@ def decode_message(s: str, p: str) -> bool:
         if p[pi] == s[si] or p[pi] == '?':
             return match(si + 1, pi + 1)
         elif p[pi] == '*':
-            # Try to match remaining s from si to the end
+            
             while si <= len(s):
                 if match(si, pi + 1):
                     return True
