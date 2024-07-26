@@ -6,7 +6,7 @@ def decode_message( s: str, p: str) -> bool:
     
         for i in range(len(s)):
             if p[i] == '?':
-               if not input_string[i].isalpha():
+               if not s[i].isalpha():
                 return False
         elif pattern[i] == '*':
             continue
