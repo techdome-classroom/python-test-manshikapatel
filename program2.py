@@ -5,5 +5,5 @@ def decode_message( s: str, p: str) -> bool:
                 return False
         for i in range(len(s)):
                 if p[i] == '?':
-                        if not s[i].isalph a():
+                        if not s[i].isalpha():
                                 return False
