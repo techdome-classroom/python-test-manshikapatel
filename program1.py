@@ -12,11 +12,11 @@ class Solution:
         def dfs(r, c):
             if r < 0 or c < 0 or r >= rows or c >= cols or grid[r][c] == 'W':
                 return
-            grid[r][c] = 'W'  # Mark the land as visited by converting 'L' to 'W'
-            # Explore the neighbors horizontally and vertically
-            dfs(r - 1, c)  # Up
-            dfs(r + 1, c)  # Down
-            dfs(r, c - 1)  # Left
+            grid[r][c] = 'W' 
+            
+            dfs(r - 1, c)  
+            dfs(r + 1, c)  
+            dfs(r, c - 1) 
             dfs(r, c + 1)  # Right
 
         for r in range(rows):
