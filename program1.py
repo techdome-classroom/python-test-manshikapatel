@@ -17,7 +17,7 @@ class Solution:
             dfs(r - 1, c)  
             dfs(r + 1, c)  
             dfs(r, c - 1) 
-            dfs(r, c + 1)  # Right
+            dfs(r, c + 1)  
 
         for r in range(rows):
             for c in range(cols):
