@@ -15,8 +15,3 @@ def decode_message( s: str, p: str) -> bool:
     
     return True
 
-# Example usage:
-print(decode_message("aa", "a"))    # Output: False
-print(decode_message("aa", "*"))    # Output: True
-print(decode_message("cb", "?a"))   # Output: False
-print(decode_message("abc", "?b?"))
